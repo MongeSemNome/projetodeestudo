@@ -1,11 +1,15 @@
 <?php
 
+use App\Http\Controllers\SyncController;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/casa', function () {
-    return 'Teste';
-});
+Route::get('/wp-posts',
+
+[SyncController::class, 'getData']
+
+);
