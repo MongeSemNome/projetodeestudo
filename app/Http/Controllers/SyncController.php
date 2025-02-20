@@ -46,7 +46,7 @@ class SyncController extends Controller
             $class_list = $posts[0]['class_list'];
             $class_listString = implode(', ', $class_list);
 
-            dd(compact(
+            /*dd(compact(
                 'id',
                 'date',
                 'slug',
@@ -60,21 +60,10 @@ class SyncController extends Controller
                 'tagsString',
                 'class_list',
                 'class_listString'
-            ));
+            ));*/
 
 
 
-        // id
-        // date
-        // slug
-        // title
-        // content
-        // excerpt
-        // author
-        // featured_media
-        // categories
-        // tags
-        // class_list
 
 
         // return response()->json($response->json);
